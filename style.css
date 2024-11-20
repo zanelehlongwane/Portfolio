@@ -64,8 +64,18 @@
   }
   .index{
 
-    background-image: url("Zee.png");
-    background-repeat: no-repeat;
-    align-items:center;
+    background-color: #1d1c1c;
     
+  }
+  img{
+    margin-left: 70%;
+    height: 500px;
+    width:auto;
+    border-radius: 50%;
+    border-color: aqua;
+
+  }
+  hr{
+    color: aqua;
+    height:2px;
   }
