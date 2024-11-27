@@ -1,81 +1,176 @@
-/* The sidebar menu */
-.sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color:aqua; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  /* The sidebar links */
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;6
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-    
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
-  .index{
+.index{
 
-    background-color: #1d1c1c;
-    
-  }
-  img{
-    margin-left: 70%;
-    height: 500px;
-    width:auto;
-    border-radius: 50%;
-    border-color: aqua;
+  background-image: url("Capture.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 
+
+}
+
+footer{
+
+  padding-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  position: absolute; /* Allows placement with top and right */
+    
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  color: white;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.button:hover {
+  background-color: #030303;
+}
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  gap: 30px;
+  background-color: #fafbfc;
+  padding: 10px;
+}
+div.gallery {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  
+}
+.webutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+div.gallery:hover {
+  border: 2px solid #f9f782;
+  
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
-  hr{
-    color: aqua;
-    height:2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
+}
+
+.hero{
+  height: 90vh;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-container > p{
+  color:aqua;
+  font-size: 15px;
+}
+
+.grid-container > div {
+  
+  background-color: #fefcfc;
+  text-align: center;
+  width: 250px;
+  padding: 10px 0;
+  font-size: 15px;
+}
+main{
+  margin-left:30%;
+  background-color: rgb(71, 70, 70);
+  
+  height: 200px;
+  width:800px;
+  text-align: center;
+  border-radius: 20%;
+  border-color: #FFD700;
+  border-style: double;
+}
+.about{
+
+  /*background-image: url("back.png");*/
+/*background-repeat: no-repeat;
+background: linear-gradient(rgba(255, 255, 255, 0.541), rgba(186, 181, 181, 0.021)), url('Capture.JPG');
+
+background-size: cover;/* Ensures the image covers the entire background */
+/*background-position: center; /* Centers the image */
+/*background-repeat: no-repeat; /* Prevents the image from repeating */
+/*background-attachment: fixed; /* Makes the background stay fixed when scrolling (optional) */
+background-color: #4b4949;
+}
+
+.navbar{
+padding-top: 15px;
+  display: flex;
+  gap: 20px;
+  position: absolute; /* Allows placement with top and right */
+    top: 10px; /* Aligns the navbar to the top */
+    right: 30px; 
+    
+}
+.getme{
+  padding-bottom: 15px;
+  display: flex;
+  gap: 20px;
+  position: absolute; /* Allows placement with top and right */
+    bottom: 10px; /* Aligns the navbar to the top */
+    left: 30px; 
+}
+.ht{
+
+  border-radius: 70%;
+  box-shadow: 10px 10px 10px 10px #050505;
+  padding: 20px;
+  
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1, /* Change to 1 for filled icons */
+    'wght' 500, /* Adjust weight (400 = regular, higher for bold) */
+    'GRAD' 0, /* Gradient adjustment */
+    'opsz' 50; /* Optical size (larger for bigger icons) */
+  color: #FFD700; /* Icon color */
+  font-size: 42px; /* Icon size */
+  display: inline-block; /* For inline placement */
+  vertical-align: middle; /* Align with text */
+  margin-top: -12px;
+}
+hr{
+  height: 4px;
+}
+

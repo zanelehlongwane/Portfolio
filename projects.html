@@ -1,39 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=perm_phone_msg" />
+  <title>Projects</title>
 </head>
-<body> <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contacts</a>
-    <a href="hobby.html">Hobbies</a>
+
+  <body class="about">
+    
+
+    <img class="ht" src="logo.png" alt="logo here" style="height: 200px; width: 200px;" >
+    
+  
+  <div class="navbar">
+    <a href="index.html">
+      <i class="fa-solid fa-house fa-xl" style="color: #FFD700;" title="Home"></i>
+    </a>
+    <a href="about.html">
+      <i class="fa-solid fa-user fa-xl" style="color: #FFD700;" title="About Me"></i>
+    </a>
+    <a href="projects.html">
+      <i class="fa-solid fa-book fa-xl" style="color: #FFD700;" title="Projects"></i>
+    </a>
+    <a href="contact.html">
+      <span class="material-symbols-outlined" title="Contact Me">perm_phone_msg</span>
+    </a>
   </div>
   
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
-    <h2>Collapsed Sidebar</h2>
-    <p>Content...</p>
-  </div> 
+  <div class="projectd">
+
+    <h1 style="color: #FFD700;text-align: center;">My Projects</h1>
+    <p style="text-align: center; color: aliceblue;">Showcasing my abilities through coding projects</p><br>
+    <hr>
+  
+  </div>
+
+ <div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="coffee.png">
+      <img src="coffee.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <br>
+
+    <div class="desc">A simple Cafe Menu project that displays the menu and prices of the Cafe. The projects was created using CSS and HTML only.</div>
+    <div class="webutton">
+      <a href="https://zanelehlongwane.github.io/CafeMenu/" class="button" target="_blank">View Project</a>
+    </div>
+  </div>
+</div>
 
 
-  <script>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="tribute.png">
+      <img src="tribute.png" alt="Forest" width="600" height="400">
+    </a>
+    <br>
 
-    function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    }
+    <div class="desc">A tribute specially created in respect of the great Bill Gates.The project all about him and his educational history in summary. The project is created using HTML and CSS.</div>
+    <div class="webutton">
+    <a href="https://zanelehlongwane.github.io/Tribute/" class="button" target="_blank">View Project</a>
+    </div>
+  </div>
+</div>
 
-    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    }
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="hotel.png">
+      <img src="hotel.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <br>
 
-</script>
+    <div class="desc">A hotel reservation system. That automates the hotel system functions such as booking, checking reservation history and tracking upcoming reservations. 
+      The system was created using Java for backend and Java server pages for front end with a focus of HTML, CSS and Javascript. Then the database is created using MYSQL</div>
+      <div class="webutton">
+      <a href="https://github.com/zanelehlongwane/Hotel-Reservation-Systems" target="_blank" class="button">View Project</a>
+</div>
+  </div>
+  
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="POS.png">
+      <img src="POS.png" alt="Mountains" width="600" height="400">
+    </a>
+    <br>
+    <div class="desc">A point of sale system for carols boutique. The system helps simplify the duties of the workers at the store. The system has a real time barcode scanner 
+      which was intergrated using Quagga.js and web camera. The system scans items,returns items, allows search of items from other branches, allows view and download of monthly reports and it allows users to purchase gift vouchers.
+      The system was created using Java for backend, MySQL for database, HTML and CSS with JavaScript in JSP's for frontend.  
+    </div>
+    <div class="webutton">
+    <a href="https://github.com/terry-bytes/The-A-Team-POS-System" target="_blank" class="button">View Project</a>
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cat.png">
+      <img src="cat.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <br>
+
+    <div class="desc">A simple cat app project based in HTML only.</div>
+    <div class="webutton">
+    <a href="https://zanelehlongwane.github.io/ABT-CatApp/" class="button" target="_blank">View Project</a>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="clearfix"></div>
+
+</div> <br>
+<hr>
+<footer>
+  <a href="https://github.com/zanelehlongwane" target="_blank">
+    <i class="fa-brands fa-github fa-xl" style="color: #FFD700;"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/zanelehlongwane-ln/" target="_blank">
+    <i class="fa-brands fa-linkedin fa-xl" style="color: #FFD700;"></i>
+  </a>
+</footer>
+
 </body>
 </html>
