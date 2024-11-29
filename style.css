@@ -73,6 +73,15 @@ div.desc {
   float: left;
   width: 24.99999%;
 }
+.message{
+
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  color: #fafbfc;
+
+}
 
 @media only screen and (max-width: 700px) {
   .responsive {
@@ -132,7 +141,13 @@ background-size: cover;/* Ensures the image covers the entire background */
 /*background-attachment: fixed; /* Makes the background stay fixed when scrolling (optional) */
 background-color: #4b4949;
 }
-
+@media (max-width: 768px) {
+  body {
+    background-image: url("Capture.JPG");
+      background-size: contain;  /* or auto */
+      background-position: top center;  /* Adjust as needed */
+  }
+}
 .navbar{
 padding-top: 15px;
   display: flex;
@@ -157,6 +172,36 @@ padding-top: 15px;
   padding: 20px;
   
 }
+.zan{
+
+  background-color: #fafbfc;
+  border-radius: 20%;
+  text-align: center;
+  align-items: center;
+  width: 400px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  box-shadow: 10px 10px 10px 10px ;
+  
+
+
+}
+.zee{
+
+  padding-top: 5px;
+  background-color: #fafbfc;
+  border-radius: 20%;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  box-shadow: 10px 10px 10px 10px ;
+ margin-left: 7%;
+
+
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -173,3 +218,4 @@ padding-top: 15px;
 hr{
   height: 4px;
 }
+
